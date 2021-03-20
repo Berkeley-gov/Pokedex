@@ -1,0 +1,17 @@
+img {
+    height: 320px;
+    width: 100%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+label {
+    padding-top: 60px;
+    margin-left: 30px;
+}
+
+.row {
+    margin-top: 200px;
+}
