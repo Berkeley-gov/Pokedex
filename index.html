@@ -21,40 +21,60 @@
   <div class="container-fluid">
     <!-- ****************** Content display begins here ****************** -->
     <main class="row">
+
       <!-- ****************** column 1 ****************** -->
-      <div class="col">
-
-      </div>
-
-      <!-- ****************** column 2 ****************** -->
       <div class="col" style="margin-top: 10%;">
-        <div class="card bg-danger" style="width: 24rem;">
+        <div class="card bg-danger" style="width: 22rem;">
           <div class="card-header bg-danger">
+
+            <!-- Pokemon image is generated using JS Fetch API -->
             <img id="pokemonImg" src="" class="card-img-top bg-light" alt="" style="padding:2px;">
+
             <div class="card-body">
               <h1 class="h1 text-warning text-center">Pokedex</h1>
-              <div class="card-header text-light bg-danger">
-                <button class="btn btn-warning">Attack</button>
-                <button class="btn btn-primary">Defense</button>
-                <button class="btn btn-light">Type</button>
-                <button class="btn btn-light">Type</button>
+              <!-- buttons displaying the pokemon's attack and defense -->
+              <div class="row">
+                <div class="col">
+                  <button id="attack" class="btn btn-primary">Attack </button>
+                  <button id="defense" class="btn btn-primary">Defense</button>
+                </div>
               </div>
+
               <label for="pokemon">
                 <input type="text" id="pokemon" placeholder="Enter pokemon name" required>
               </label>
 
-              <button class="btn btn-warning" type="submit" id="btn">Search</button>
+              <button class="btn btn-light" type="submit" id="btn">Search</button>
             </div>
         </div>
         </div>
       </div>
 
-      <!-- ****************** column 3 ****************** -->
-      <div class="col">
-
+      <!-- ****************** column 2 ****************** -->
+      <div class="col side">
+        <div class="card bg-danger sideCard">
+          <div class="card-header">
+            <div class="card-body">
+              <div class="alert alert-dark" role="alert">
+                <h2 id="name" class="h2 alert-heading text-center"></h2>
+                <hr>
+                <p id="type">Pokemon's type: </p>
+                <p id="weight">Pokemon's weight: </p>
+                <p id="move">Pokemon's move: </p>
+                <hr>
+                <ul id="abilities">
+                </ul>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer class="row"></footer>
+
+    <footer class="row">
+
+    </footer>
   </div>
 
 

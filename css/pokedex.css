@@ -1,3 +1,13 @@
+html {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: content-box !important;
+}
+
+.col {
+    padding: 0 !important;
+}
+
 img {
     height: 320px;
     width: 100%;
@@ -13,5 +23,31 @@ label {
 }
 
 .row {
-    margin-top: 200px;
+    margin: 600px 0 0 0;
+    padding: 0;
 }
+
+.sideCard {
+    margin: 50px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+#defense {
+    float: right;
+    margin-right: 50px;
+}
+
+#attack {
+    margin-left: 50px;
+}
+
+#pokemon {
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.side {
+    margin-top: 200px !important;
+}
+
+
