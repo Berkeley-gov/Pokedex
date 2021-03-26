@@ -11,43 +11,46 @@ html {
 img {
     height: 320px;
     width: 100%;
+    background-color: white;
+    border: 4px solid black;
 }
 
 h1 {
-    padding: 10px;
-}
-
-label {
-    padding-top: 60px;
-    margin-left: 30px;
-}
-
-.row {
-    margin: 600px 0 0 0;
-    padding: 0;
-}
-
-.sideCard {
-    margin: 50px 0 0 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.button-container {
+    padding: 10px 40px;
 }
 
 #defense {
     float: right;
-    margin-right: 50px;
+    width: 200px;
 }
 
 #attack {
-    margin-left: 50px;
+    float: left;
+    width: 200px;
 }
 
 #pokemon {
     padding: 5px;
     border-radius: 10px;
-    margin-left: 5px;
-}
-.side {
-    margin-top: 200px !important;
 }
 
 
+#pokedex {
+    margin-top: 80px;
+    width: 28rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px !important;
+}
+
+label {
+    padding-left: 80px;
+}
+
+li {
+    padding: 5px !important;
+}

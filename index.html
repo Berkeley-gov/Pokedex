@@ -5,11 +5,6 @@
   <meta charset="utf-8">
   <meta name="description" content="Poke Index project based on the animated show call Pokemon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta name="theme-color" content="#fafafa">
   <title>Pokemon | Poke Index</title>
   <!--***************** Bootstrap CDN link  *****************-->
   <link rel="stylesheet" href="css/pokedex.css"/>
@@ -18,67 +13,65 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- ****************** Content display begins here ****************** -->
-    <main class="row">
 
-      <!-- ****************** column 1 ****************** -->
-      <div class="col" style="margin-top: 10%;">
-        <div class="card bg-danger" style="width: 22rem;">
-          <div class="card-header bg-danger">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
 
-            <!-- Pokemon image is generated using JS Fetch API -->
-            <img id="pokemonImg" src="" class="card-img-top bg-light" alt="" style="padding:2px;">
+        <!--******************  Pokedex exterior body start here ******************-->
+        <div id="pokedex" class="bg-danger bg-gradient shadow-lg p-3 mb-5 rounded">
+          <h1 class="h1 text-center text-warning">Pokedex</h1>
+          <hr>
 
-            <div class="card-body">
-              <h1 class="h1 text-warning text-center">Pokedex</h1>
-              <!-- buttons displaying the pokemon's attack and defense -->
-              <div class="row">
-                <div class="col">
-                  <button id="attack" class="btn btn-primary">Attack </button>
-                  <button id="defense" class="btn btn-primary">Defense</button>
-                </div>
-              </div>
+          <!--****************** Pokemon image is generated using JS Fetch API ******************-->
+          <img id="pokemonImg" src="" class="card-img-top" alt="" style="padding:2px;">
 
+          <!--****************** buttons displaying the pokemon's attack and defense ******************-->
+          <div class="button-container row align-items-center">
+            <div class="col">
+              <h2 id="name" class="h2 text-center text-light"></h2>
+              <hr>
+              <button id="attack" class="btn btn-dark bg-gradient">Attack:</button>
+              <button id="defense" class="btn btn-dark bg-gradient">Defense:</button>
+            </div>
+          </div>
+
+          <!--****************** button group that will display data regarding the pokemon's statics and attributes ******************-->
+          <div class="row-fluid align-items-center">
+            <div class="col align-items-center">
+              <hr>
+              <ul class="list-group list-group-horizontal-lg">
+                <li id="type" class="font-monospace fs-6 list-group-item bg-primary bg-gradient text-light text-center flex-fill">Type:</li>
+                <li id="weight" class="font-monospace fs-6 list-group-item bg-primary bg-gradient text-light text-center flex-fill">Weight:</li>
+                <li id="move" class="font-monospace fs-6 list-group-item bg-primary bg-gradient text-light text-center flex-fill">Move:</li>
+              </ul>
+              <hr>
+              <ul class="list-group list-group-horizontal-lg">
+                <li class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill"></li>
+                <li class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill"></li>
+                <li class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill"></li>
+              </ul>
+              <hr>
+            </div>
+          </div>
+
+          <div class="row-fluid align-items-center">
+            <div class="col">
+              <!--****************** Label for pokedex input; input would would be apart of the GET Fetch API request ******************-->
               <label for="pokemon">
                 <input type="text" id="pokemon" placeholder="Enter pokemon name" required>
               </label>
 
+              <!--****************** Submit button start; Has an event listener ******************-->
               <button class="btn btn-light" type="submit" id="btn">Search</button>
-            </div>
-        </div>
-        </div>
-      </div>
-
-      <!-- ****************** column 2 ****************** -->
-      <div class="col side">
-        <div class="card bg-danger sideCard">
-          <div class="card-header">
-            <div class="card-body">
-              <div class="alert alert-dark" role="alert">
-                <h2 id="name" class="h2 alert-heading text-center"></h2>
-                <hr>
-                <p id="type">Pokemon's type: </p>
-                <p id="weight">Pokemon's weight: </p>
-                <p id="move">Pokemon's move: </p>
-                <hr>
-                <ul id="abilities">
-                </ul>
-                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-
-    <footer class="row">
-
-    </footer>
+    </div>
   </div>
 
 
-  <!-- <script src="ajax.js"></script> -->
   <script src="js/fetch.js"></script>
 </body>
 </html>

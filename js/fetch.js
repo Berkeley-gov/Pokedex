@@ -20,8 +20,7 @@ function getPokemon(){
 
       // Console logging all data that is retrieved from the pokemon api
       console.log(`Data retrieved from the Fetch API: ${data.species.name}
-                   Pokemon's type: ${data.types.name}
-     
+                   Pokemon's type: ${data.types[0].type.name}
       `);
 
       sessionStorage.setItem('name', data.species.name);
@@ -45,6 +44,7 @@ function getPokemon(){
 
 function setPokemonImg(imgSrc) {
   document.getElementById('pokemonImg').src = imgSrc;
+  document.getElementById("pokemonImg").style.backgroundColor= "black";
 
 }
 
@@ -57,14 +57,14 @@ function setPokemonStats(pokemonStatistics) {
 }
 
 function setAttackAndDefense(attack, defense) {
-    document.getElementById('attack').innerHTML = `Attack:  ${attack}`;
+    document.getElementById('attack').innerHTML = `Attack: ${attack}`;
     document.getElementById('defense').innerHTML = `Defense: ${defense}`;
 }
 
 function setWeight(weight) {
-    document.getElementById('weight').innerHTML = `${sessionStorage.getItem('name').toUpperCase()}'s weight: ${weight}kg`
+    document.getElementById('weight').innerHTML = `Weight: ${weight}kg`
 }
 
 function setPokemonMove(move) {
-    document.getElementById('move').innerHTML = `${sessionStorage.getItem('name').toUpperCase()}'s attack move: ${move}`
+    document.getElementById('move').innerHTML = `Move: ${move}`
 }
