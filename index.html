@@ -16,15 +16,25 @@
 
   <div class="container">
     <div class="row justify-content-md-center">
+
+      <div class="row">
+        <div class="col">
+          <h1 class="h2 text-center" style="padding: 20px !important;">How to use the Pokedex:</h1>
+          <p class="lead text-center">To search for a Pokemon, users must enter the Pokemon's correct name or the pokemon assigned storage number (index) in the Pokemon API database.</p>
+          <p class="lead text-center">For example, You could search for Bulbasaur by name or its index number which is 1. Either method will work.</p>
+        </div>
+      </div>
+
       <div class="col-md-auto">
 
+        </div>
         <!--******************  Pokedex exterior body start here ******************-->
-        <div id="pokedex" class="bg-danger bg-gradient shadow-lg p-3 mb-5 rounded">
-          <h1 class="h1 text-center text-warning">Pokedex</h1>
+        <div id="pokedex" class="bg-danger bg-gradient p-4 shadow-lg rounded">
+          <h1 class="h1 text-center heading">Pokedex</h1>
           <hr>
 
           <!--****************** Pokemon image is generated using JS Fetch API ******************-->
-          <img id="pokemonImg" src="" class="card-img-top" alt="" style="padding:2px;">
+          <img id="pokemonImg" src="" class="card-img-top" alt="">
 
           <!--****************** buttons displaying the pokemon's attack and defense ******************-->
           <div class="button-container row align-items-center">
@@ -41,15 +51,9 @@
             <div class="col align-items-center">
               <hr>
               <ul class="list-group list-group-horizontal-lg">
-                <li id="type" class="font-monospace fs-6 list-group-item bg-primary bg-gradient text-light text-center flex-fill">Type:</li>
-                <li id="weight" class="font-monospace fs-6 list-group-item bg-primary bg-gradient text-light text-center flex-fill">Weight:</li>
-                <li id="move" class="font-monospace fs-6 list-group-item bg-primary bg-gradient text-light text-center flex-fill">Move:</li>
-              </ul>
-              <hr>
-              <ul class="list-group list-group-horizontal-lg">
-                <li class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill"></li>
-                <li class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill"></li>
-                <li class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill"></li>
+                <li id="type" class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill">Type:</li>
+                <li id="weight" class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill">Weight:</li>
+                <li id="move" class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill">Move:</li>
               </ul>
               <hr>
             </div>
