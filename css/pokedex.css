@@ -27,12 +27,12 @@ h1 {
 
 #defense {
     float: right;
-    width: 120px;
+    width: 80px;
 }
 
 #attack {
     float: left;
-    width: 120px;
+    width: 80px;
 }
 
 #pokemon {
