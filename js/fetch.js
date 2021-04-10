@@ -16,7 +16,7 @@ function getPokemon(){
   let userInput = document.getElementById('pokemon').value
   // Used fetch api along with string interpolation to make http request with provided user input
 
-  fetch(`https://pokeapi.co/api/v2/pokemon/${userInput}`).then( (response) => response.json()).then((data) => {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${userInput.toLowerCase()}`).then( (response) => response.json()).then((data) => {
 
       // Console logging all data that is retrieved from the pokemon api
       console.log(`Data retrieved from the Fetch API: ${data.species.name}
