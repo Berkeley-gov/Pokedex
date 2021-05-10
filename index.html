@@ -91,20 +91,22 @@
       <div class="col-md-auto">
         </div>
         <!--******************  Pokedex exterior body start here ******************-->
-        <div id="pokedex" class="bg-danger bg-gradient p-4 shadow-lg rounded">
-          <h1 class="h1 text-center heading">Pokedex</h1>
+        <div id="pokedex" class="exterior bg-danger bg-gradient p-4 shadow-lg rounded">
+          <img id="pokemonLogo" src="assests/pokedex.png" class="img-fluid card-img" alt="">
           <hr>
 
           <!--****************** Pokemon image is generated using JS Fetch API ******************-->
-          <img id="pokemonImg" src="" class="card-img-top" alt="">
+          <img id="pokemonImg" src="" class="card-img-top rounded" alt="">
 
           <!--****************** buttons displaying the pokemon's attack and defense ******************-->
           <div class="button-container row align-items-center">
             <div class="col">
-              <h2 id="name" class="h2 text-center text-light"></h2>
+              <h2 id="name" class="h2 text-center text-light">Welcome</h2>
               <hr>
-              <button id="attack" class="btn btn-dark bg-gradient">Attack:</button>
-              <button id="defense" class="btn btn-dark bg-gradient">Defense:</button>
+              <ul class="list-group list-group-horizontal-lg">
+                <li id="attack" class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill">Attack:</li>
+                <li id="defense" class="font-monospace fs-6 list-group-item bg-dark bg-gradient text-light text-center flex-fill">Defense:</li>
+              </ul>
             </div>
           </div>
 
@@ -134,11 +136,11 @@
           </div>
         </div>
 
-        <div id="footer-0" class="card text-white bg-dark mb-3">
+        <div id="footer-0" class="card text-dark mb-3">
           <div class="card-header">Contact</div>
-          <div class="card-body">
-            <h5 class="card-title">My Contact Information</h5>
-            <a class="card-text" src="mailto:jrramirezgov@gmail.com">Send a email</a>
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-white">My Contact Information</h5>
+            <a class="card-text text-white" src="mailto:jrramirezgov@gmail.com">Send a email</a>
           </div>
         </div>
       </div>

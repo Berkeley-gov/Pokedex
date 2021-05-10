@@ -6,7 +6,7 @@
     height: 320px;
     width: 100%;
     background-color: white;
-    border: 15px solid #CDCDCD;
+    border: 10px solid #CDCDCD;
 }
 
 h1 {
@@ -19,16 +19,6 @@ h1 {
     padding: 10px 20px;
 }
 
-#defense {
-    float: right;
-    width: 200px;
-}
-
-#attack {
-    float: left;
-    width: 200px
-}
-
 #pokemon {
     padding: 10px;
     border-radius: 10px;
@@ -37,10 +27,12 @@ h1 {
 
 
 #pokedex {
-    margin: 20px auto;
-    width: 28rem;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px !important;
-    border-radius: 40px;
+    margin: 60px auto;
+    width: 26rem;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 25px 22px !important;
+    background-color: #D42B2B !important;
+    border-radius: 60px;
 }
 
 li {
@@ -48,7 +40,7 @@ li {
 }
 
 .heading {
-    color: gold;
+    color: #EEF443;
 }
 
 label {
@@ -64,4 +56,15 @@ label {
     margin: 0 auto !important;
     display: flex;
     justify-content: center;
+}
+
+hr {
+    border: 2px solid black !important;
+}
+
+.exterior {
+    border: 10px solid #6C0303 !important;
+}
+
+#pokemonLogo {
 }

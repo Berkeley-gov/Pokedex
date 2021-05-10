@@ -44,7 +44,7 @@ function getPokemon(){
 
 function setPokemonImg(imgSrc) {
   document.getElementById('pokemonImg').src = imgSrc;
-  document.getElementById("pokemonImg").style.backgroundColor= "black";
+  document.getElementById("pokemonImg").style.backgroundColor= "#7EBBFC";
 
 }
 
