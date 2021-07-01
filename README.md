@@ -1,6 +1,6 @@
 # Pokedex
 
-https://berkeley-gov.github.io/Pokedex/
+Project URL: https://berkeley-gov.github.io/Pokedex/
 
 ## Introduction
 This project is based on one of my favorite childhood animated shows, Pokémon. It is part of my software engineering portfolio projects, and demonstrates my ability to use multiple front-end technologies to build a simple one-page web application. 
