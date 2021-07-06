@@ -3,7 +3,7 @@
 Project URL: https://berkeley-gov.github.io/Pokedex/
 
 ## Introduction
-This project is based on one of my favorite childhood animated show, Pokémon. It is part of my software engineering portfolio projects, and demonstrates my ability to use multiple front-end technologies to build a simple one-page web application. 
+This project is based on one of my favorite childhood animated show, Pokémon. It is part of my software engineering portfolio and it demonstrates my ability to use multiple front-end technologies to build a simple one-page web application. 
 
 ### Summary
 The Pokedex application uses the Poke API, a modern RESTful API linked to an extensive database detailing everything about the Pokémon main game series.
