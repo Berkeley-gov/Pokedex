@@ -18,5 +18,7 @@ The following technologies were used to build this project:
 * Bootstrap: v4.4.1
 * HTML5
 * JavaScript: ES6 (Fetch API)
+* Postman (API testing)
+* DBeaver
 
 ![Pokedex example picture from the animated show](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgran4u.xtgem.com%2FPokedex.png&f=1&nofb=1)
