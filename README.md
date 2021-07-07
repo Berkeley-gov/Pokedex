@@ -21,4 +21,7 @@ The following technologies were used to build this project:
 * Postman (API testing)
 * DBeaver
 
+
+
+
 ![Pokedex example picture from the animated show](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgran4u.xtgem.com%2FPokedex.png&f=1&nofb=1)
