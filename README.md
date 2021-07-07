@@ -7,7 +7,7 @@ This project is based on one of my favorite childhood animated show, Pokémon. I
 
 ### Summary
 The Pokedex application uses the Poke API, a modern RESTful API linked to an extensive database detailing everything about the Pokémon main game series.
-The API allows for HTTP GET requests only so users are only allowed to retrieve data and not manipulate. This will allow a client to only fetch data regarding a Pokémon the user inquired for.
+The API allows for HTTP GET requests only so users are only allowed to retrieve data and not manipulate it. This will allow a client to only fetch data regarding a Pokémon the user inquired for.
 For more information regarding the Poke API, please visit this link: _https://pokeapi.co/about_
 
 ### Project Aim
