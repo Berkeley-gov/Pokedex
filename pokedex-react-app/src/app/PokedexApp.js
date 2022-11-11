@@ -1,9 +1,12 @@
+ import React from 'react';
+ import PokedexUI from '../components/Pokedex/Pokedex';
+ import NavBar from '../components/Navbar/NavBar';
 
-
-function PokedexApp() {
+const PokedexApp = () => {
   return (
-    <div className="App">
-      <h1>Testing</h1>
+    <div>
+      <NavBar/>
+      <PokedexUI/>
     </div>
   );
 }
