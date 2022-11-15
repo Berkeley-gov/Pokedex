@@ -1,20 +1,18 @@
 import React from 'react';
-import '../../assets/styles/pokedex.css';
 import '../../assets/styles/styles.css';
 
-export default function PokedexUI()  {
-    const searchBtn = document.getElementById('search-btn'); // search button
-    
-
+const PokedexUI = () =>  {    
+    // Takes in a string or number used to conduct a GET Fetch call to the Pokemon API
     const getPokemonData = (pokemon) => {
-        const nameScreen = document.getElementById('name-screen'); //name-screen
+        const nameScreen = document.getElementById('name-screen'); // name-screen
         const imageScreen = document.getElementById('main-screen'); // image screen
         const aboutScreen = document.getElementById('about-screen'); // about-text screen
         const typeScreen = document.getElementById('type-screen'); // type screen
         const idScreen = document.getElementById('id-screen'); // spices screen
         const inputField = document.getElementById('name-input'); // search field input
         
-        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+        // GET Fetch call to the Pokemon RESTful web service
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
             .then((response) => response.json())
             .then((data) => {
             let id = ('00' + data.id).slice(-3);
@@ -28,17 +26,18 @@ export default function PokedexUI()  {
             inputField.value = '';
         });
     };
-
+    
+    // Handler function used to process the user's input 
     const handleInputField = (event) => {
         event.preventDefault();
-
         const userChosenPokemon = document.getElementById('name-input').value;
         getPokemonData(userChosenPokemon);
     }
 
+    // Important JSX for the mobile responsive Pokedex. Mocked based on the original design from the animated series.
     return(
         <main>
-                <div id="pokedex">
+            <div id="pokedex">
                 {/*<!-- Left Panel -->*/}
                 <div id="left-panel">
                     {/*<!-- Top lights -->*/}
@@ -201,11 +200,11 @@ export default function PokedexUI()  {
 
                 <div className="search-container">
                     <form>
-                        <input id="name-input" type="text" placeholder="Name / id"/>
+                        <input id="name-input" type="text" placeholder="Enter name / id"/>
 
                         <button id="search-btn" className="ball-container" onClick={handleInputField}>
                             <div className="upper-half-ball"></div>
-                            <div className="bottom-half-ball"></div>
+                            <div className="bottom-half-ball shadow-lg"></div>
                             <div className="center-ball"></div>
                             <div className="center-line"></div>
                         </button>
@@ -215,3 +214,5 @@ export default function PokedexUI()  {
         </main>
     );
 }
+
+export default PokedexUI;

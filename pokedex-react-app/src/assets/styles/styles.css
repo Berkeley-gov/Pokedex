@@ -39,7 +39,7 @@
 }
 
 main {
-  padding-top: 3%;
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -81,6 +81,20 @@ body {
   position: relative;
   animation: shake 1.5s ease-in infinite;
   animation-play-state: paused;
+}
+
+.btn-pokdex {
+  background-color: var(--main-bg-color);
+  color: white;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: var(--main-bg-color);
+}
+
+.card-title {
+  font-family: 'Press Start 2P', cursive;
 }
 
 @keyframes shake {
@@ -144,11 +158,17 @@ body {
   width: 100%;
 }
 
+form {
+  display: contents;
+}
+
 input {
   text-align: center;
   height: 40px;
   border-radius: 4px;
   margin-right: 40px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
 }
 /* poke-dex */
 #pokedex {
@@ -156,15 +176,7 @@ input {
   width: calc(15rem * 2);
   display: flex;
   border-radius: 10px;
-  box-shadow: -15px 25px 13px rgb(0 0 0 / 18%), -2px 5px 0px rgb(0 0 0 / 18%);
-}
-
-@media only screen and (max-width: 600px) {
-  #pokedex {
-    width: 22rem;
-    height: 22rem;
-    margin-top: 15%;
-  }
+  box-shadow: -20px 20px 20px rgb(0 0 0 / 18%), -2px 5px 0px rgb(0 0 0 / 18%);
 }
 
 /* LEFT PANEL */
@@ -246,6 +258,18 @@ input {
   top: 3px;
   left: 3px;
   border-radius: 50%;
+}
+
+.btn-portfolio {
+  background-color: #7ba9f7;
+  color: white;
+  border-radius: 4px;
+  margin-left: 25px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-bg-color);
+  color: white;
 }
 
 /* Center Screen */
@@ -611,6 +635,10 @@ input {
   justify-content: space-between;
 }
 
+.card {
+  border-radius: unset;
+}
+
 .thin-button {
   width: 3rem;
   height: 1rem;
@@ -682,9 +710,24 @@ input {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  #pokedex {
+    width: 22rem;
+    height: 20rem;
+    margin-top: 5%;
+  }
+
   .screen {
     width: 8rem;
     height: 8rem;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .btn-portfolio {
+    font-size: 0.7rem;
+    margin-left: 15px;
   }
 
   .big-button {
@@ -700,6 +743,7 @@ input {
   .right-panel-screen {
     width: 8rem;
     height: 4rem;
+    font-size: 0.5rem;
   }
 
   .square-buttons-container {
@@ -710,6 +754,14 @@ input {
   .blue-squares-container {
     width: 7rem;
     height: 2.8rem;
+  }
+
+  .screen-container {
+    margin-top: 10%;
+  }
+
+  .btn-pokdex {
+    font-size: 0.7rem;
   }
 
   .bottom-screens-container .right-panel-screen {
@@ -752,13 +804,17 @@ input {
   }
 
   .long-button {
-    width: 2.5rem;
-    height: 0.45rem;
+    width: 2.7rem;
+    height: .7rem;
     margin-left: -10px;
   }
 
+  .upper-buttons-container {
+    margin-top: -3%;
+  }
+
   #right-panel::before {
-    height: 17.2rem;
+    height: 15.2rem;
   }
 
   .nav-buttons-container {
@@ -766,25 +822,27 @@ input {
   }
 
   .buttons-container {
-    margin-top: -20%;
+    margin-top: 0;
+    grid-template-rows: 45% 60%;
   } 
 
   .green-screen {
-    width: 5rem;
+    width: 5.2rem;
+    margin-top: 5%;
   }
 
   .right-nav-container {
-    top: -40px;
+    top: -35px;
   }
 
   .nav-button-vertical {
     height: 1rem;
-    width: 3rem;
+    width: 2.5rem;
   }
 
   .nav-button-horizontal {
     height: 1rem;
-    width: 3rem;
+    width: 2.5rem;
   }
 
   .bottom-right-nav-container .small-light {
