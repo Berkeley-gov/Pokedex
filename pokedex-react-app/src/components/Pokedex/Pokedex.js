@@ -2,6 +2,7 @@ import React from 'react';
 import '../../assets/styles/styles.css';
 
 const PokedexUI = () =>  {    
+
     // Takes in a string or number used to conduct a GET Fetch call to the Pokemon API
     const getPokemonData = (pokemon) => {
         const nameScreen = document.getElementById('name-screen'); // name-screen
@@ -24,7 +25,10 @@ const PokedexUI = () =>  {
                 data.weight / 10
             }kg`;
             inputField.value = '';
-        });
+        })
+        .catch(error => {
+            alert('Please enter a pokemon\'s name or their id number.\n Error: ' + error);
+        }) 
     };
     
     // Handler function used to process the user's input 
@@ -33,6 +37,8 @@ const PokedexUI = () =>  {
         const userChosenPokemon = document.getElementById('name-input').value;
         getPokemonData(userChosenPokemon);
     }
+
+    
 
     // Important JSX for the mobile responsive Pokedex. Mocked based on the original design from the animated series.
     return(
@@ -201,6 +207,7 @@ const PokedexUI = () =>  {
                 <div className="search-container">
                     <form>
                         <input id="name-input" type="text" placeholder="Enter name / id"/>
+
 
                         <button id="search-btn" className="ball-container" onClick={handleInputField}>
                             <div className="upper-half-ball"></div>
